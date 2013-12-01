@@ -2,7 +2,10 @@
 
 @import 'mixins.less';
 
-body { padding-top: 0; }
+body {
+    padding-top: 0;
+    background: url('/images/retina_wood.png') left top repeat;
+}
 
 span.strikethrough {
     text-decoration: strikethrough;
@@ -10,6 +13,12 @@ span.strikethrough {
 }
 .header {
     border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Francois One', sans-serif;
+}
+.header {
+    padding-bottom: 1em;
 }
 
 .pie-catcher {
@@ -34,6 +43,11 @@ span.strikethrough {
         text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
         color: rgba(255,255,255,0.8);
         background-color: rgba(218,165,32,0.7);
+    }
+    .nav-brand {
+        font-family: 'Francois One', sans-serif;
+        font-size: 24px;
+        color: rgba(255,255,255,0.8);
     }
     .nav a {
         color: rgba(218,165,32,0.7);
