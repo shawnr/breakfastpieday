@@ -1,1 +1,1 @@
-console.log('\'Allo \'Allo!');
+// scripts go here
