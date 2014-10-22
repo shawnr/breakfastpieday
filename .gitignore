@@ -3,5 +3,4 @@
 *.pyc
 local_settings.py
 .tmp
-.tmp/*
 dist
