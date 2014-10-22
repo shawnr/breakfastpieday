@@ -312,7 +312,8 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/bootstrap/fonts/*.*'
+                        'bower_components/bootstrap/fonts/*.*',
+                        'fonts/*.*'
                     ]
                 }]
             },

@@ -6067,7 +6067,7 @@ body {
 }
 body {
   padding-top: 0;
-  background: url('/images/retina_wood.png') left top repeat;
+  background: url('/images/retina_wood_b.png') left top repeat;
 }
 span.strikethrough {
   text-decoration: strikethrough;
@@ -6094,7 +6094,7 @@ h6,
   padding-bottom: 1em;
 }
 .pie-catcher {
-  background: url('/images/pies.jpg') center center no-repeat fixed;
+  background: url('/images/pies_b.jpg') center center no-repeat fixed;
   background-size: cover;
   margin-top: 0;
   padding-top: 2em;
