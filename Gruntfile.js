@@ -15,8 +15,25 @@ module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
+    grunt.loadNpmTasks('grunt-build-control');
+
     // Define the configuration for all the tasks
     grunt.initConfig({
+
+        buildcontrol: {
+            options: {
+              dir: 'dist',
+              commit: true,
+              push: true,
+              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+            },
+            pages: {
+              options: {
+                remote: 'git@github.com:shawnr/breakfastpieday.git',
+                branch: 'gh-pages'
+              }
+            }
+        },
 
         // Project settings
         yeoman: {
@@ -120,7 +137,7 @@ module.exports = function (grunt) {
             ]
         },
 
-        
+
         // Mocha testing framework configuration options
         mocha: {
             all: {
@@ -131,7 +148,7 @@ module.exports = function (grunt) {
             }
         },
 
-        
+
         // Compiles LESS to CSS and generates necessary files if requested
         less: {
             options: {
@@ -308,7 +325,7 @@ module.exports = function (grunt) {
             }
         },
 
-        
+
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
         modernizr: {
