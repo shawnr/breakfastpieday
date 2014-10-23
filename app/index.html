@@ -7,9 +7,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Breakfast Pie Day</title>
-        <meta name="description" content="">
+        <meta name="description" content="Skip the hassle of shopping and eat pie for breakfast on Black Friday!">
         <meta name="viewport" content="width=device-width">
-        <meta property="og:title" content="Breakfast Pie Day" />
+        <meta property="og:title" content="Black Pie Day" />
         <meta property="og:type" content="holiday" />
         <meta property="og:url" content="http://www.blackpieday.com" />
         <meta property="og:image" content="images/Motherhood_and_apple_pie.jpg" />
@@ -26,6 +26,24 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '378465175637714',
+              xfbml      : true,
+              version    : 'v2.1'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
 
 
         <section class="wrapper pie-catcher">
@@ -81,6 +99,25 @@
                     <h4>Step Three: <br>Eat Pie for Breakfast</h4>
                     <p>Once you pull yourself out of that soft, warm bed go put on some coffee (or pour a glass of milk) and serve yourself up some leftover pie.</p>
                 </div>
+            </div>
+        </section>
+        <section class="promote container">
+            <p class="lead">Let people know what you're doing the day after Thanksgiving: Eating pie!</p>
+            <p><a class="fb-share-dia btn btn-lg btn-primary">Share this</a></p>
+            <script>
+                $('fb-share-dia').on('click', function() {
+                    FB.ui({
+                      method: 'share',
+                      href: 'http://blackpieday.com',
+                    }, function(response){});
+                });
+
+            </script>
+            <div
+              class="fb-like"
+              data-share="true"
+              data-width="450"
+              data-show-faces="true">
             </div>
         </section>
 
