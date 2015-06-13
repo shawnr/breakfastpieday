@@ -1,0 +1,1 @@
+$(document).on("ready",function(){$(".social-poster").on("click",function(){ga("send",{hitType:"event",eventCategory:"social",eventAction:"download",eventLabel:"shareables",eventValue:1})})});
